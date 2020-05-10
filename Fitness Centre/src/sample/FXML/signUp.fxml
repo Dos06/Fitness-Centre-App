@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: f8fa7d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.signUpController">
+    <children>
+        <Label layoutX="249.0" layoutY="14.0" prefHeight="59.0" prefWidth="252.0" text="Fitness Centre">
+            <font>
+                <Font name="Segoe UI Black Italic" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="331.0" layoutY="56.0" text="By DOS">
+            <font>
+                <Font name="Segoe UI Black Italic" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="buttonExit" layoutX="600.0" layoutY="27.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="136.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-background-radius: 20;" text="Exit">
+            <font>
+                <Font name="Segoe UI Black Italic" size="24.0" />
+            </font>
+        </Button>
+        <Label layoutX="284.0" layoutY="150.0" text="Registration">
+            <font>
+                <Font name="Segoe UI Black Italic" size="30.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="imgLogo" fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/Logo.png" />
+            </image>
+        </ImageView>
+      <RadioButton fx:id="radioMale" layoutX="460.0" layoutY="413.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="70.0" text="Male">
+         <font>
+            <Font name="Segoe UI Italic" size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="textfieldLogin" layoutX="51.0" layoutY="225.0" prefHeight="30.0" prefWidth="220.0" promptText="Login" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordfieldPassword" layoutX="51.0" layoutY="280.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="buttonSignUp" layoutX="307.0" layoutY="520.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="136.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-background-radius: 20;" text="Sign Up">
+         <font>
+            <Font name="Segoe UI Black Italic" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textfieldName" layoutX="460.0" layoutY="225.0" prefHeight="30.0" prefWidth="220.0" promptText="Name" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textfieldSurname" layoutX="460.0" layoutY="280.0" prefHeight="30.0" prefWidth="220.0" promptText="Surname" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="radioFemale" layoutX="591.0" layoutY="413.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="94.0" text="Female">
+         <font>
+            <Font name="Segoe UI Italic" size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="textfieldAge" layoutX="515.0" layoutY="345.0" prefHeight="33.0" prefWidth="110.0" promptText="Age" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboboxActivity" layoutX="51.0" layoutY="345.0" prefHeight="33.0" prefWidth="220.0" promptText="Choose Activity: " style="-fx-border-color: black;" />
+    </children>
+</AnchorPane>

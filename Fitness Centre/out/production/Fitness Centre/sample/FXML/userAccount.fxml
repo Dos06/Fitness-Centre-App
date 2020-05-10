@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: f8fa7d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.userAccountController">
+    <children>
+        <Label layoutX="249.0" layoutY="14.0" prefHeight="59.0" prefWidth="252.0" text="Fitness Centre">
+            <font>
+                <Font name="Segoe UI Black Italic" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="331.0" layoutY="56.0" text="By DOS">
+            <font>
+                <Font name="Segoe UI Black Italic" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="buttonExit" layoutX="600.0" layoutY="27.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="136.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-background-radius: 20;" text="Exit">
+            <font>
+                <Font name="Segoe UI Black Italic" size="24.0" />
+            </font>
+        </Button>
+        <Label layoutX="278.0" layoutY="114.0" text="User Account">
+            <font>
+                <Font name="Segoe UI Black Italic" size="30.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="imgLogo" fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textfieldLoginProof" layoutX="64.0" layoutY="200.0" prefHeight="30.0" prefWidth="220.0" promptText="Prove your Login" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboboxEdit" layoutX="64.0" layoutY="266.0" prefHeight="33.0" prefWidth="220.0" promptText="What do you want to EDIT?" style="-fx-border-color: black;" />
+      <PasswordField fx:id="passwordfieldPassword" layoutX="343.0" layoutY="200.0" prefHeight="30.0" prefWidth="220.0" promptText="Prove your Password" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="buttonEdit" layoutX="307.0" layoutY="469.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="136.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-background-radius: 20;" text="Edit">
+         <font>
+            <Font name="Segoe UI Black Italic" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textfieldEdit" layoutX="343.0" layoutY="266.0" prefHeight="30.0" prefWidth="220.0" promptText="To Edit" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboboxActivity" layoutX="265.0" layoutY="352.0" prefHeight="33.0" prefWidth="220.0" promptText="Change Activity: " style="-fx-border-color: black;" />
+      <Button fx:id="buttonShowUsers" layoutX="495.0" layoutY="469.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="193.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-background-radius: 20;" text="Show Users">
+         <font>
+            <Font name="Segoe UI Black Italic" size="24.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
